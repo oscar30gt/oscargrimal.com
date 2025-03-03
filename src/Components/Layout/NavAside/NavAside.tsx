@@ -19,7 +19,7 @@ function NavAside({ children }: { children: React.JSX.Element | React.JSX.Elemen
 		<>
 			<aside className={`navAside ${isMenuOpen ? "open" : "closed"}`}>
 				<section className="titleSec">
-					<img className="profilePic" src={Memoji} alt="It's me" />
+					<img className="profilePic" src={Memoji} alt="Me" />
 					<h1>Óscar Grimal Torres</h1>
 					<h2>Developer / Student</h2>
 				</section>
@@ -34,8 +34,7 @@ function NavAside({ children }: { children: React.JSX.Element | React.JSX.Elemen
 					if (e.key === "Enter" || e.key === " ")
 						toggleMenu();
 				}}>
-				<i className="icon1 fi fi-rr-angle-small-up"></i>
-				<i className="icon2 fi fi-rr-cross-small"></i>
+				<i className="fi fi-tr-angle-up"></i>
 			</div>
 		</>
 	);

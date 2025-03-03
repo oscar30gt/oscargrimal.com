@@ -15,7 +15,11 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(root, "index.html"),
-				blog: resolve(root, "blog", "index.html")
+				blog: resolve(root, "blog", "index.html"),
+				projects: resolve(root, "blog", "index.html"),
+				stack: resolve(root, "blog", "index.html"),
+				links: resolve(root, "blog", "index.html"),
+				about: resolve(root, "blog", "index.html"),
 			}
 		}
 	}

@@ -1,18 +1,25 @@
 import NavAside from "../Layout/NavAside/NavAside.tsx";
 import MainContent from "../Layout/MainContent/MainContent.tsx";
 
-function MainPageLayout({ children }: { children: React.JSX.Element | React.JSX.Element[] }) {
+function MainPageLayout({ children, currentPage = "home" }: { children: React.JSX.Element | React.JSX.Element[], currentPage?: string; }) {
+
+	const pages = [
+		{ name: "Home", url: "/" },
+		{ name: "Stack", url: "/stack/" },
+		{ name: "Projects", url: "/projects/" },
+		{ name: "Blog", url: "/blog/" },
+		{ name: "About", url: "/about/" },
+		{ name: "Links", url: "/links/" }
+	];
 	return (
 		<div className="app">
 			<NavAside>
 				<nav>
 					<ul>
-						<li className="current"><a href="/">Home</a></li>
-						<li><a href="/stack/">Stack</a></li>
-						<li><a href="/projects/">Builds</a></li>
-						<li><a href="/blog/">Blog</a></li>
-						<li><a href="/about/">About</a></li>
-						<li><a href="/links/">Links</a></li>
+						{pages.map((page, index) => (
+							<li key={index} className={currentPage === page.name.toLowerCase() ? "current" : ""}>
+								<a href={page.url}>{page.name}</a>
+							</li>))}
 					</ul>
 				</nav>
 			</NavAside>
@@ -24,4 +31,4 @@ function MainPageLayout({ children }: { children: React.JSX.Element | React.JSX.
 	);
 }
 
-export default MainPageLayout;
+export default MainPageLayout;;;

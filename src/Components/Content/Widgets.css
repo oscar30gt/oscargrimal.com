@@ -95,3 +95,26 @@ a.thumbnailWidget {
         box-shadow: var(--SHADOW), 0 0 1px #fff;
     }
 }
+
+a.iconLinkWidget {
+    display: flex;
+    align-items: center;
+    
+    > i 
+    {
+        color: var(--SECONDARY);
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        height: 1.7rem;
+        margin: 0 10px;
+    }
+
+    img {
+        height: 70px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        margin: 0 5px;
+        border-radius: 5px;
+        box-shadow: var(--SHADOW), 0 0 1px #fff;
+    }
+}
