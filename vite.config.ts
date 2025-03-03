@@ -12,5 +12,11 @@ export default defineConfig({
 	build: {
 		outDir,
 		emptyOutDir: true,
+		rollupOptions: {
+			input: {
+				main: resolve(root, "index.html"),
+				blog: resolve(root, "blog", "index.html")
+			}
+		}
 	}
 });
