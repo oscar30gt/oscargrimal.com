@@ -1,68 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	--GLASS: hsla(150, 10%, 6%, 0.5);
+	--GLASS-LIGHTER: hsla(150, 10%, 14%, 0.5);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	--BACKGROUND: hsl(150, 10%, 6%);
+	--BACKGROUND-LIGHTER: hsl(150, 10%, 10%);
+	--BACKGROUND-LIGHTER-2: hsl(150, 10%, 14%);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+	--TEXT: #d8dbd7;
+	--SECONDARY: #8a8f8b;
+	--BORDER: #5a645236;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+	--SHADOW: 0 0 20px rgba(10, 20, 15, 0.1);
+	--FLOATING-SHADOW: 0 0 30px rgba(10, 20, 15, 0.2), 0 0 15px rgba(10, 20, 15, 0.2);
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+	/* ========= */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+	--SERIF: "Fraunces", serif;
+	--SANS: "DM Sans", sans-serif;
+	--MONO: "DM Mono", monospace;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+	--BOUNCE-BREZIER: cubic-bezier(0.3, 2, 0.4, 1);
+	--ASIDE-WIDTH: 230px;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+	:root {
+		--GLASS: hsla(150, 20%, 92%, 0.5);
+		--GLASS-LIGHTER: hsla(150, 20%, 97%, 0.5);
+
+		--BACKGROUND: hsl(150, 15%, 96%);
+		--BACKGROUND-LIGHTER: hsl(150, 15%, 92%);
+		--BACKGROUND-LIGHTER-2: hsl(150, 15%, 88%);
+
+		--TEXT: #1e221f;
+		--SECONDARY: #626b65;
+		--BORDER: #b4c0b636;
+
+		--SHADOW: 0 0 10px rgba(0, 0, 0, 0.05);
+		--FLOATING-SHADOW: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+	}
 }
