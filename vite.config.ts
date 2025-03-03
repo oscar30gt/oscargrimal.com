@@ -16,10 +16,10 @@ export default defineConfig({
 			input: {
 				main: resolve(root, "index.html"),
 				blog: resolve(root, "blog", "index.html"),
-				projects: resolve(root, "blog", "index.html"),
-				stack: resolve(root, "blog", "index.html"),
-				links: resolve(root, "blog", "index.html"),
-				about: resolve(root, "blog", "index.html"),
+				projects: resolve(root, "projects", "index.html"),
+				stack: resolve(root, "stack", "index.html"),
+				links: resolve(root, "links", "index.html"),
+				about: resolve(root, "about", "index.html"),
 			}
 		}
 	}
