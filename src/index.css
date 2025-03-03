@@ -44,3 +44,34 @@
 		--FLOATING-SHADOW: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
 	}
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--BACKGROUND);
+	color: var(--TEXT);
+	font-family: "DM Sans";
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.app {
+	max-width: min(900px, calc(100% - 4rem));
+	margin: auto;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+@media (max-width: 730px) {
+	.app {
+		max-width: calc(100% - 2rem);
+	}
+}
