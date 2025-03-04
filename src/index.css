@@ -29,12 +29,12 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--GLASS: hsla(150, 20%, 92%, 0.5);
-		--GLASS-LIGHTER: hsla(150, 20%, 97%, 0.5);
+		--GLASS: hsla(150, 10%, 92%, 0.5);
+		--GLASS-LIGHTER: hsla(150, 10%, 97%, 0.5);
 
 		--BACKGROUND: hsl(150, 15%, 96%);
-		--BACKGROUND-LIGHTER: hsl(150, 15%, 92%);
-		--BACKGROUND-LIGHTER-2: hsl(150, 15%, 88%);
+		--BACKGROUND-LIGHTER: hsl(150, 5%, 92%);
+		--BACKGROUND-LIGHTER-2: hsl(150, 5%, 89%);
 
 		--TEXT: #1e221f;
 		--SECONDARY: #626b65;
