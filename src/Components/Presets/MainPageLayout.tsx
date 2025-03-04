@@ -12,7 +12,7 @@ function MainPageLayout({ children, currentPage = "home" }: { children: React.JS
 		{ name: "Links", url: "/links/" }
 	];
 	return (
-		<div className="app">
+		<div className="app mainPage">
 			<NavAside>
 				<nav>
 					<ul>

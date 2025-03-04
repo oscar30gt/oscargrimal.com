@@ -10,6 +10,7 @@ import Links from "./pages/links.tsx";
 import Projects from "./pages/projects.tsx";
 // import Stack from "./pages/stack.tsx";
 import About from "./pages/about.tsx";
+import BlogArticle from "./pages/blogArticle.tsx";
 
 createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
@@ -23,12 +24,12 @@ export function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="/blog" element={<Blog />} />
 				{/* <Route path="/stack" element={<Stack />} /> */}
 				<Route path="/about" element={<About />} />
 				<Route path="/links" element={<Links />} />
 
-				<Route path="/blog/article/:slug" element={<Home />} />
+				<Route path="/blog" element={<Blog />} />
+				<Route path="/blog/:slug" element={<BlogArticle />} />
 			</Routes>
 		</BrowserRouter>
 	);

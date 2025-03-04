@@ -1,4 +1,4 @@
-import { BlogWidget } from "../Components/Content/Widgets.tsx";
+import BlogList from "../Components/Presets/BlogList.tsx";
 import MainPageLayout from "../Components/Presets/MainPageLayout.tsx";
 
 import '../index.css';
@@ -6,29 +6,8 @@ import '../index.css';
 export default function Blog() {
 	return (
 		<MainPageLayout currentPage="blog">
-		<h1>Blog</h1>
-
-		<BlogWidget
-			title="Back at it: what’s coming to DeskUI"
-			date="March 2025"
-			url="/blog/article/"
-		/>
-		{/* <BlogWidget
-			title="How learning assembly made me a better developer"
-			date="February 2025"
-			url="/blog/scalable-systems"
-		/>
-		<BlogWidget
-			title="Big projects can turn into your biggest nightmare"
-			date="February 2025"
-			url="/blog/scalable-systems"
-		/> */}
-		<BlogWidget
-			title="Welcome to my new website!"
-			date="February 2025"
-			url="/blog/article/"
-		/>
-
-	</MainPageLayout>
+			<h1>Blog</h1>
+			<BlogList />
+		</MainPageLayout>
 	);
 }

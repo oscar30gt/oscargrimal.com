@@ -1,0 +1,20 @@
+.backLink {
+	color: var(--SECONDARY);
+	transition: all 200ms ease;
+	margin-bottom: 10px;
+	
+	i {
+		transition: left 300ms var(--BOUNCE-BREZIER);
+		position: relative;
+		left: 0;
+		top: 2px;
+	}
+
+	&:hover {
+		color: var(--TEXT);
+
+		i {
+			left: -3px;
+		}
+	}
+}

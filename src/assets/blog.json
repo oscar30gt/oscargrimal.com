@@ -1,0 +1,9 @@
+{
+    "articles": [
+        {
+            "title": "Welcome to my new website!",
+            "identifier": "welcome-to-my-new-website",
+            "date": {"y": 2025, "m": 3, "d": 5}
+        }
+    ]
+}

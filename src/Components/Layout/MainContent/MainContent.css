@@ -1,5 +1,4 @@
 .mainContentContainer {
-	padding-left: var(--ASIDE-WIDTH);
 	width: 100%;
 	padding-top: 2rem;
 
@@ -8,12 +7,15 @@
 	}
 }
 
+.mainPage .mainContentContainer {
+	padding-left: var(--ASIDE-WIDTH);
+}
+
 .mainContent {
 	width: 100%;
 	padding: 1rem;
 
-	> img 
-	{
+	img.plainImage {
 		width: 100%;
 		border-radius: 6px;
 		border: 1px solid var(--BORDER);
@@ -22,18 +24,97 @@
 
 	h1 {
 		font-size: 2.7rem;
+		margin-top: 2rem;
 		margin-bottom: 1rem;
 		font-family: var(--SERIF);
 		font-weight: 300;
 	}
 
-	h2 
-	{
+	h2 {
 		font-size: 2.2rem;
 		margin-top: 3rem;
-		margin-bottom: 0.9rem;
+		margin-bottom: 1rem;
 		font-family: var(--SERIF);
 		font-weight: 300;
+	}
+
+	ul,
+	ol {
+		li {
+			color: var(--SECONDARY);
+			margin: 0.5rem 0;
+
+			a.inlineLink,
+			strong {
+				color: var(--TEXT);
+			}
+		}
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+			position: relative;
+		}
+
+		li::after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 1px;
+			background-color: var(--SECONDARY);
+			left: -36px;
+			top: 10px;
+		}
+	}
+
+	code {
+		font-family: var(--MONO);
+		font-size: 0.9rem;
+		background-color: var(--BACKGROUND-LIGHTER);
+		border-top: 1px solid var(--BACKGROUND-LIGHTER-2);
+		padding: 3px 6px;
+		border-radius: 5px;
+	}
+
+	pre {
+		background-color: var(--BACKGROUND-LIGHTER);
+		padding: 16px 20px;
+		border-radius: 6px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		border-top: 1px solid var(--BACKGROUND-LIGHTER-2);
+
+		code {
+			font-size: 0.9rem;
+			background-color: transparent;
+			padding: 0;
+			border: none;
+			border-radius: 0;
+			color: var(--SECONDARY);
+		}
+	}
+
+	blockquote {
+		margin: 1.4rem 0;
+		padding-left: 14px;
+		position: relative;
+		opacity: 0.7;
+
+		p {
+			font-size: 0.9rem;
+		}
+
+		&::after {
+			content: "";
+			background-color: var(--SECONDARY);
+			width: 2px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 2px;
+		}
 	}
 
 	p {
@@ -45,29 +126,33 @@
 		strong {
 			color: var(--TEXT);
 		}
+	}
 
-		a {
-			color: var(--TEXT);
+	a.inlineLink {
+		color: var(--TEXT);
 
-			&:hover {
-				text-decoration: underline;
-			}
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 
-	footer
-	{
+	footer {
 		.copyright {
 			text-align: center;
 			font-size: 0.8rem;
 			color: var(--SECONDARY);
 			margin-top: 2rem;
+			opacity: 0.6;
 		}
 	}
 }
 
 @media (max-width: 730px) {
-	.mainContentContainer {
+	.mainPage .mainContentContainer {
 		padding-left: 0;
+	}
+
+	.copyright {
+		padding-bottom: 4rem;
 	}
 }
