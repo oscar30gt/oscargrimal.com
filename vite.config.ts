@@ -17,12 +17,6 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(root, "index.html"),
-				// blog: resolve(root, "blog", "index.html"),
-				// blogArticle: resolve(root, "blog", "articles", "index.html"),
-				// projects: resolve(root, "projects", "index.html"),
-				// stack: resolve(root, "stack", "index.html"),
-				// links: resolve(root, "links", "index.html"),
-				// about: resolve(root, "about", "index.html"),
 			}
 		}
 	},
