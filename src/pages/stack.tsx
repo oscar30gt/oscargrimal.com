@@ -1,13 +1,10 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import MainPageLayout from "../Components/Presets/MainPageLayout.tsx";
 
-import MainPageLayout from "../../Components/Presets/MainPageLayout.tsx";
+import { IconLinkWidget } from "../Components/Content/Widgets.tsx";
+import '../index.css';
 
-import '../../index.css';
-import { IconLinkWidget } from "../../Components/Content/Widgets.tsx";
-
-createRoot(document.getElementById('root')!).render(
-	<StrictMode>
+export default function Stack() {
+	return (
 		<MainPageLayout currentPage="stack">
 			<h1>Stack</h1>
 			<IconLinkWidget
@@ -47,5 +44,5 @@ createRoot(document.getElementById('root')!).render(
 
 
 		</MainPageLayout>
-	</StrictMode>,
-);
+	);
+}

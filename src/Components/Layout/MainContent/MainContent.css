@@ -12,6 +12,14 @@
 	width: 100%;
 	padding: 1rem;
 
+	> img 
+	{
+		width: 100%;
+		border-radius: 6px;
+		border: 1px solid var(--BORDER);
+		margin: 8px 0;
+	}
+
 	h1 {
 		font-size: 2.7rem;
 		margin-bottom: 1rem;

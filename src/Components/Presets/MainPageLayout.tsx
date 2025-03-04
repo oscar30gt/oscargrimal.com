@@ -5,7 +5,7 @@ function MainPageLayout({ children, currentPage = "home" }: { children: React.JS
 
 	const pages = [
 		{ name: "Home", url: "/" },
-		{ name: "Stack", url: "/stack/" },
+		// { name: "Stack", url: "/stack/" },
 		{ name: "Projects", url: "/projects/" },
 		{ name: "Blog", url: "/blog/" },
 		{ name: "About", url: "/about/" },
