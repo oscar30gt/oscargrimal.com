@@ -73,3 +73,9 @@
 		}
 	}
 }
+
+@media (max-width: 900px) {
+    .gridContent {
+        grid-template-columns: 1fr;
+    }
+}

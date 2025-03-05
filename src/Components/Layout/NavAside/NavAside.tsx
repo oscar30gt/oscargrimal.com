@@ -1,5 +1,5 @@
 import React from "react";
-import Memoji from "../../../assets/Images/Common/Memoji.jpeg";
+import Memoji from "../../../assets/Images/Common/Memoji.webp";
 
 import "./NavAside.css";
 

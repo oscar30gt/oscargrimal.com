@@ -1,44 +1,22 @@
 import Grid from "../Components/Layout/Grid/Grid.tsx";
 import MainPageLayout from "../Components/Presets/MainPageLayout.tsx";
 
+import projectData from "../assets/projects.json";
+
 import '../index.css';
 
 export default function Projects() {
 	return (
 		<MainPageLayout currentPage="projects">
 			<h1>Projects</h1>
-			<Grid content={[
-				{
-					title: "Project 1",
-					description: "Description 1",
-					image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-					href: "#"
-				},
-				{
-					title: "Project 2",
-					description: "Description asd as da das d asdsa das da d asd asd as d 2",
-					image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-					href: "#"
-				},
-				{
-					title: "Project 2",
-					description: "Description 2",
-					image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-					href: "#"
-				},
-				{
-					title: "Project asd as das d asd asddas das d ad a dsa d ad ad as d asd ad2",
-					description: "Description 2",
-					image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-					href: "#"
-				},
-				{
-					title: "Project 2",
-					description: "Description 2",
-					image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-					href: "#"
-				}
-			]} />
+			<Grid content={projectData.projects.map(proj => {
+				return {
+					title: proj.title,
+					description: proj.description,
+					image: `/markdown/projects/${proj.identifier}/thumbnail_690x390.png`,
+					href: `/projects/${proj.identifier}/`
+				};
+			})} />
 		</MainPageLayout>
 	);
 }

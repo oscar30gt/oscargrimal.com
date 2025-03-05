@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "DeskUI",
+            "description": "A powerful library for building desktop apps with React and Electron.",
+            "identifier": "deskui"
+        },
+        {
+            "title": "Synced",
+            "description": "Easily translate your Unity games.",
+            "identifier": "synced"
+        }
+    ]
+}

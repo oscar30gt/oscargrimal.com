@@ -1,11 +1,9 @@
-import DeskUIThumbnail from "../assets/Images/Projects/DeskUI/thumbnail.png";
-import SyncedThumbnail from "../assets/Images/Projects/Synced/thumbnail.png";
-
 import MainPageLayout from "../Components/Presets/MainPageLayout.tsx";
-import { LinkWidget, ThumbnailWidget } from "../Components/Content/Widgets.tsx";
+import { LinkWidget } from "../Components/Content/Widgets.tsx";
 
 import "../index.css";
 import BlogList from "../Components/Presets/BlogList.tsx";
+import ProjectList from "../Components/Presets/ProjectList.tsx";
 
 export default function Home() {
 	return (
@@ -17,18 +15,7 @@ export default function Home() {
 
 			<h2>Featured Projects</h2>
 			<p>Some things I want to share with the world.</p>
-			<ThumbnailWidget
-				title="DeskUI"
-				caption="A powerful library for building desktop apps with React and Electron."
-				img={DeskUIThumbnail}
-				url="/projects/deskui/"
-			/>
-			<ThumbnailWidget
-				title="Synced"
-				caption="Easily translate your Unity games."
-				img={SyncedThumbnail}
-				url="/projects/synced/"
-			/>
+			<ProjectList limit={2} />
 
 			<LinkWidget label="Explore all Projects" url="/projects/" />
 
