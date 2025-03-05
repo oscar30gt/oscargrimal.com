@@ -15,7 +15,7 @@ export default function Home() {
 
 			<h2>Featured Projects</h2>
 			<p>Some things I want to share with the world.</p>
-			<ProjectList limit={2} />
+			<ProjectList />
 
 			<LinkWidget label="Explore all Projects" url="/projects/" />
 

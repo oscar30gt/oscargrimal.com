@@ -1,5 +1,6 @@
 {
     "deskui": {
+        "featured": false,
         "title": "DeskUI",
         "description": "A powerful library for building desktop apps with React and Electron.",
         "links": [],
@@ -14,6 +15,7 @@
         }
     },
     "code-templates": {
+        "featured": true,
         "title": "Code Templates",
         "description": "Configure the initial content of your files in VSCode.",
         "links": [
@@ -37,6 +39,7 @@
         }
     },
     "plane-physics-based-controller": {
+        "featured": false,
         "title": "Plane Physics-Based Controller",
         "description": "A simple physics-based controller for Unity.",
         "links": [
@@ -56,6 +59,7 @@
         }
     },
     "synced": {
+        "featured": true,
         "title": "Synced",
         "description": "Easily translate your Unity games.",
         "links": [
