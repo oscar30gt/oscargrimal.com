@@ -1,0 +1,75 @@
+.gridHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+
+	p {
+		margin: 0;
+	}
+
+	button {
+		transition: scale 300ms var(--BOUNCE-BREZIER), color 200ms ease;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		color: var(--SECONDARY);
+		font-size: 1rem;
+		position: relative;
+		top: 2px;
+	}
+
+	button:not(.current):hover {
+		scale: 1.1;
+	}
+
+	button.current {
+		color: var(--TEXT);
+	}
+}
+
+.gridContent {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+
+	.widget {
+		margin: 0;
+	}
+}
+
+.gridItem {
+	img {
+		aspect-ratio: 16 / 9;
+		width: calc(100% - 10px);
+		object-fit: cover;
+		margin: 0 5px;
+		border-radius: 5px;
+		box-shadow: var(--SHADOW), 0 0 1px #fff;
+	}
+
+	.text {
+		width: 100%;
+		padding: 0 5px;
+
+		h3,
+		p {
+			padding-left: 0;
+			line-height: 1.2rem;
+			margin-top: 6px;
+		}
+	}
+}
+
+.gridContent.listView {
+	grid-template-columns: 1fr;
+
+	.gridItem {
+		display: flex;
+		gap: 5px;
+
+		img {
+			width: 160px;
+		}
+	}
+}
