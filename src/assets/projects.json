@@ -7,7 +7,7 @@
         "fancyHeader": false,
         "themeColor": "",
         "technicalDetails": {
-            "type": "Product",
+            "type": "Library/Tools",
             "status": "In Progress",
             "languagesAndTechnolgies": "React, TypeScript, Electron, Webpack, Babel, JavaScript, HTML, CSS",
             "duration": "-",
@@ -31,7 +31,7 @@
         "fancyHeader": false,
         "themeColor": "#",
         "technicalDetails": {
-            "type": "Product",
+            "type": "VSCode Extension",
             "status": "Finished",
             "languagesAndTechnolgies": "TypeScript, VSCode API",
             "duration": "2 weeks",
@@ -75,7 +75,7 @@
         "fancyHeader": true,
         "themeColor": "#3b85d1",
         "technicalDetails": {
-            "type": "Product",
+            "type": "Unity Asset",
             "status": "Finished",
             "languagesAndTechnolgies": "C#, Unity, JSON",
             "duration": "3 months",
