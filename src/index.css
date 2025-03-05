@@ -4,11 +4,13 @@
 
 :root {
 	--GLASS: hsla(150, 10%, 6%, 0.5);
-	--GLASS-LIGHTER: hsla(150, 10%, 14%, 0.5);
+	--GLASS-LIGHTER: hsla(150, 10%, 16%, 0.5);
 
 	--BACKGROUND: hsl(150, 10%, 6%);
 	--BACKGROUND-LIGHTER: hsl(150, 10%, 10%);
 	--BACKGROUND-LIGHTER-2: hsl(150, 10%, 14%);
+
+	--SELECTION: hsl(152, 12%, 32%);
 
 	--TEXT: #d8dbd7;
 	--SECONDARY: #8a8f8b;
@@ -36,17 +38,22 @@
 		--BACKGROUND-LIGHTER: hsl(150, 5%, 92%);
 		--BACKGROUND-LIGHTER-2: hsl(150, 5%, 89%);
 
+		--SELECTION: hsl(149, 21%, 71%);
+
 		--TEXT: #1e221f;
 		--SECONDARY: #626b65;
 		--BORDER: #b4c0b636;
 
 		--SHADOW: 0 0 10px rgba(0, 0, 0, 0.05);
-		--FLOATING-SHADOW: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+		--FLOATING-SHADOW: 0 0 20px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0, 0.1);
 	}
 }
 
 html {
 	scroll-behavior: smooth;
+	::selection {
+		background-color: var(--SELECTION);
+	}
 }
 
 body {
@@ -59,6 +66,7 @@ body {
 	overflow-x: hidden;
 }
 
+#root > .mainContentContainer .mainContent,
 .app {
 	max-width: min(900px, calc(100% - 4rem));
 	margin: auto;
@@ -70,6 +78,7 @@ body {
 }
 
 @media (max-width: 730px) {
+	#root > .mainContentContainer .mainContent,
 	.app {
 		max-width: calc(100% - 2rem);
 	}

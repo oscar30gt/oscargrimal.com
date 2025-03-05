@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./Grid.css";
 
 export default function Grid({
+    title,
     content,
-
 }: {
+    title: string,
     content: { title: string, description: string, image: string, href: string; }[];
 }) {
     const [gridView, _setGridView] = useState(true);
@@ -18,7 +19,7 @@ export default function Grid({
     return (
         <div className="grid">
             <div className="gridHeader">
-                <p>Grid</p>
+                <p>{title}</p>
                 <div className="gridSettings">
                     <button className={`gridSettingsButton ${gridView ? "" : "current"}`} onClick={() => setGridView(false)}><i className="fi fi-rr-list" /></button>
                     <button className={`gridSettingsButton ${gridView ? "current" : ""}`} onClick={() => setGridView(true)}><i className="fi fi-rr-apps" /></button>

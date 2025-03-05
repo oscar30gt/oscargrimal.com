@@ -94,7 +94,7 @@ a.thumbnailWidget {
         object-fit: cover;
         margin: 0 5px;
         border-radius: 5px;
-        box-shadow: var(--SHADOW), 0 0 1px #fff;
+        box-shadow: var(--SHADOW), 0 0 1px #ffffff90;
     }
 }
 

@@ -20,7 +20,7 @@ function NavAside({ children }: { children: React.JSX.Element | React.JSX.Elemen
 			<aside className={`navAside ${isMenuOpen ? "open" : "closed"}`}>
 				<section className="titleSec">
 					<img className="profilePic" src={Memoji} alt="Me" />
-					<h1>Óscar Grimal Torres</h1>
+					<h1>Óscar Grimal</h1>
 					<h2>Developer / Student</h2>
 				</section>
 				{children}

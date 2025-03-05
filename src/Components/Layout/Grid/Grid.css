@@ -8,6 +8,12 @@
 		margin: 0;
 	}
 
+	.gridSettings
+	{
+		display: flex;
+		gap: 10px;
+	}
+
 	button {
 		transition: scale 300ms var(--BOUNCE-BREZIER), color 200ms ease;
 		background-color: transparent;
@@ -17,6 +23,7 @@
 		font-size: 1rem;
 		position: relative;
 		top: 2px;
+		padding: 0;
 	}
 
 	button:not(.current):hover {
@@ -45,18 +52,25 @@
 		object-fit: cover;
 		margin: 0 5px;
 		border-radius: 5px;
-		box-shadow: var(--SHADOW), 0 0 1px #fff;
+		box-shadow: var(--SHADOW), 0 0 1px #ffffff90;
 	}
 
 	.text {
 		width: 100%;
 		padding: 0 5px;
+		max-height: 5.9rem;
+		overflow: hidden;
 
 		h3,
 		p {
 			padding-left: 0;
-			line-height: 1.2rem;
+			line-height: 1.3rem;
 			margin-top: 6px;
+		}
+
+		p 
+		{
+			text-overflow: ellipsis;
 		}
 	}
 }

@@ -1,6 +1,8 @@
 .mainContentContainer {
 	width: 100%;
 	padding-top: 2rem;
+	position: relative;
+	pointer-events: none;
 
 	.mainContent > :first-child {
 		margin-top: 0;
@@ -11,15 +13,21 @@
 	padding-left: var(--ASIDE-WIDTH);
 }
 
+.app .mainContent {
+	position: relative;
+}
+
 .mainContent {
 	width: 100%;
 	padding: 1rem;
+	pointer-events: all;
 
 	img.plainImage {
 		width: 100%;
 		border-radius: 6px;
 		border: 1px solid var(--BORDER);
 		margin: 8px 0;
+		box-shadow: var(--FLOATING-SHADOW);
 	}
 
 	h1 {
@@ -78,11 +86,11 @@
 		border-radius: 5px;
 	}
 
-	pre {
+	pre, .box {
 		background-color: var(--BACKGROUND-LIGHTER);
 		padding: 16px 20px;
 		border-radius: 6px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		box-shadow: var(--FLOATING-SHADOW);
 		border-top: 1px solid var(--BACKGROUND-LIGHTER-2);
 
 		code {
@@ -143,6 +151,34 @@
 			color: var(--SECONDARY);
 			margin-top: 2rem;
 			opacity: 0.6;
+		}
+	}
+
+	.technicalData
+	{
+		padding: 5px 20px;
+		
+		h3 
+		{
+			margin-top: 1.7rem;
+			margin-bottom: 0.9rem;
+
+			&:first-child 
+			{
+				margin-top: 0.6rem;
+			}
+		}
+
+		i 
+		{
+			margin-right: 1rem;
+			position: relative;
+			top: 2px;
+		}
+		
+		p 
+		{
+			margin: 10px 0;
 		}
 	}
 }

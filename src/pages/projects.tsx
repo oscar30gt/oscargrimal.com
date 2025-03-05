@@ -9,12 +9,12 @@ export default function Projects() {
 	return (
 		<MainPageLayout currentPage="projects">
 			<h1>Projects</h1>
-			<Grid content={projectData.projects.map(proj => {
+			<Grid title="Recent Projects" content={Object.entries(projectData).map(([id, { title, description }]) => {
 				return {
-					title: proj.title,
-					description: proj.description,
-					image: `/markdown/projects/${proj.identifier}/thumbnail_690x390.png`,
-					href: `/projects/${proj.identifier}/`
+					title: title,
+					description: description,
+					image: `/markdown/projects/${id}/thumbnail_690x390.png`,
+					href: `/projects/${id}/`
 				};
 			})} />
 		</MainPageLayout>
