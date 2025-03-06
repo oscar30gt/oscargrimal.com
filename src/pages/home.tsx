@@ -11,7 +11,7 @@ export default function Home() {
 			<h1>Welcome!</h1>
 
 			<p>Hi, I'm <strong>Óscar</strong>, a self-taught <strong>Developer</strong> passionate about building efficient and scalable systems. Right now, my main focus is on <a className="inlineLink" href="/projects/deskui">DeskUI</a>, a toolset for creating cross-platform desktop apps with React and Electron.</p>
-			<p>At 19, I'm currently studying <strong>Computer Engineering</strong> at the University of Zaragoza.</p>
+			<p>At 19, I'm currently studying <strong>Computer Engineering</strong>.</p>
 
 			<h2>Featured Projects</h2>
 			<p>Some things I want to share with the world.</p>

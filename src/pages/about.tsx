@@ -7,7 +7,7 @@ export default function About() {
 		<MainPageLayout currentPage="about">
 			<h1>About</h1>
 			<p>
-				I'm Óscar Grimal Torres, a self-taught developer with a strong passion for building efficient, scalable systems. Currently, I'm pursuing a degree in Computer Engineering at the University of Zaragoza, but my journey into software development began long before that.
+				I'm Óscar Grimal Torres, a self-taught developer with a strong passion for building efficient, scalable systems. Currently, I'm stidying a degree in Computer Engineering, but my journey into software development began long before that.
 			</p>
 			<p>
 				My first exposure to the world of programming was at the age of 9, when I discovered Scratch. I also used to code with Lego sets, which was one of my biggest passions as a child. At 15, I wanted to challenge myself with something more complex, so I started learning Python on my own. I find immense satisfaction in solving problems, whether it's optimizing code or designing systems that are both functional and maintainable. Since then, I've been constantly learning and improving my skills every day.

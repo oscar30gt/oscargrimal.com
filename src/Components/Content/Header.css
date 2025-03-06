@@ -28,9 +28,9 @@ header.pageHeader {
 	.linkList {
 		position: absolute;
 		top: 1rem;
-		left: 1rem;
+		z-index: 100;
 		display: flex;
-		gap: 20px;
+		gap: 5px;
 
 		a
 		{
@@ -40,8 +40,8 @@ header.pageHeader {
 			border: 1px solid var(--BORDER);
 			border-radius: 20px;
 			z-index: 1;
-			margin-left: -15px;
 			display: block;
+			backdrop-filter: blur(10px);
 		}
 
 		a:hover 
