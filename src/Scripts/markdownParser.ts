@@ -8,6 +8,18 @@ renderer.link = ({ href, title, text }) => {
 };
 
 renderer.image = ({ href, title, text }) => {
+
+	if (href.startsWith("$progressbar")) {
+		const percentage = href.split("$progressbar")[1];
+
+		return `<div class="progressBar">
+            		<p>${text}<span></span>${percentage}%</p>
+            		<div class="progressBarContainer">
+                		<div class="progressBarFill" style='width: ${percentage}%'></div>
+            		</div>
+        		</div>`;
+	}
+
 	return `<img src="${href}" alt="${text}" title="${title || ""}" class="plainImage"/>`;
 };
 

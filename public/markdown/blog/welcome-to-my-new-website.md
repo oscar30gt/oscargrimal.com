@@ -5,8 +5,8 @@ Hi, I'm Óscar. I'm excited to introduce my new personal website! This space wil
 ## What's Inside
 
 - **Projects**: A showcase of the tools and apps I've been building.
-- **Blog**: Thoughts, tips, and lessons learned in software development.
-- **About Me**: Learn more about me, my setup, and what I'm passionate about.
+- **Blog**: Random thoughts and tips I learn from my journey in software development.
+- **About Me**: Learn more about me and what I'm passionate about.
 
 ## Why This Website?
 

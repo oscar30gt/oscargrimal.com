@@ -1,3 +1,4 @@
+// import ProgressBar from "../Components/Content/ProgressBar.tsx";
 import Grid from "../Components/Layout/Grid/Grid.tsx";
 import MainPageLayout from "../Components/Presets/MainPageLayout.tsx";
 
@@ -9,6 +10,9 @@ export default function Projects() {
 	return (
 		<MainPageLayout currentPage="projects">
 			<h1>Projects</h1>
+
+			{/* <ProgressBar title="DeskUI Development Status" progress={20} /> */}
+
 			<Grid title="Recent Projects" content={Object.entries(projectData).map(([id, { title, description }]) => {
 				return {
 					title: title,

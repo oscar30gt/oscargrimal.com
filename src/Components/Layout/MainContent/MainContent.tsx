@@ -22,7 +22,7 @@ function MainContent({ children }: { children: React.JSX.Element | React.JSX.Ele
 	//#region RENDER
 	return (
 		<section className="mainContentContainer">
-			<div className="mainContent">
+			<div className="mainContent markdown">
 				{children}
 				<Copyright />
 			</div>
