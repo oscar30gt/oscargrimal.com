@@ -12,11 +12,12 @@ export default function Links() {
 				url="https://github.com/oscar30gt"
 				icon="fi-brands-github"
 			/>
-			{/* <IconLinkWidget
+			<IconLinkWidget
 				title="Reddit"
 				url="https://www.reddit.com/user/Oscar30dev"
 				icon="fi-brands-reddit"
 			/>
+			{/* 
 			<IconLinkWidget
 				title="X"
 				url=""
