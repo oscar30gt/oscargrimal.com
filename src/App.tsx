@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Analytics } from "@vercel/analytics/react";
 import { createRoot } from 'react-dom/client';
 
 import "./index.css";
@@ -21,21 +21,23 @@ createRoot(document.getElementById('root')!).render(
 
 export function App() {
 	return (
-		<BrowserRouter>
-			<Routes>
+		<>
+			<Analytics />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/links" element={<Links />} />
 
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/links" element={<Links />} />
 
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/projects/:slug" element={<ProjectPage />} />
 
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/projects/:slug" element={<ProjectPage />} />
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/:slug" element={<BlogArticle />} />
 
-				<Route path="/blog" element={<Blog />} />
-				<Route path="/blog/:slug" element={<BlogArticle />} />
-
-			</Routes>
-		</BrowserRouter>
+				</Routes>
+			</BrowserRouter>
+		</>
 	);
 }
