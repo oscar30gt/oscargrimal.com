@@ -8,7 +8,7 @@ I also took the opportunity to model my own aircraft, a *F-22 Raptor*, using Ble
 
 ## How It Works
 
-Rather than relying on basic transformations, the plane's movement is driven by physics. The ailerons, rudder, flaps, and elevators all contribute to the way the aircraft handles, making the flight experience more dynamic and realistic.
+Rather than relying on basic transformations, the plane's movement is driven by physics. The ailerons, rudders, flaps, and elevators all contribute to the way the aircraft handles, making the flight experience more dynamic and realistic.
 
 The controller supports both **keyboard & mouse** and **gamepad input**, with gamepad controls being the most optimized way to fly. 
 

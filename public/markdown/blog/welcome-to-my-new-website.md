@@ -1,5 +1,3 @@
-# Welcome to My New Website!
-
 Hi, I'm Óscar. I'm excited to introduce my new personal website! This space will showcase my **projects**, share my **thoughts** on software development, and give you a peek into my journey as a developer.
 
 ![IMAGE](/markdown/blog/Images/mywebsite.png)

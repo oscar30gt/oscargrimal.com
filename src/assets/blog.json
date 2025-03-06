@@ -1,9 +1,10 @@
 {
-    "articles": [
-        {
-            "title": "Welcome to my new website!",
-            "identifier": "welcome-to-my-new-website",
-            "date": {"y": 2025, "m": 3, "d": 5}
+    "welcome-to-my-new-website": {
+        "title": "Welcome to my New Website!",
+        "date": {
+            "y": 2025,
+            "m": 3,
+            "d": 5
         }
-    ]
+    }
 }

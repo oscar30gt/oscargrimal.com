@@ -6,7 +6,8 @@ import { BackLink } from "../Components/Content/Buttons.tsx";
 
 import blogData from "../assets/blog.json";
 import { useEffect, useRef, useState } from "react";
-import { parseMarkdown } from "../Scripts/markdownParser.ts";
+import GeneratePageFromMarkdownFile from "../Scripts/markdownPage.ts";
+
 
 export default function BlogArticle() {
     const { slug } = useParams() as { slug: string; };
@@ -15,58 +16,50 @@ export default function BlogArticle() {
     const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        getContent();
+    });
 
-        const _blogExists = blogExists(slug);
-        setArticleFound(_blogExists);
+    const getContent = async () => {
+        const content = await GeneratePageFromMarkdownFile(`/markdown/blog/${slug}.md`);
+        if (content === null) {
+            setArticleFound(false);
+            return;
+        }
 
-        if (!_blogExists) return;
+        setArticleFound(true);
+        if (contentRef.current)
+            contentRef.current.innerHTML = content;
+    };
 
-        const fetchContent = async () => {
-            const raw = await getRawMarkdown(slug);
+    // RENDER ==========================================================================================================
 
-            if (raw.startsWith("<")){
-                setArticleFound(false);
-                return "This article is not available at the moment.";
-            }
+    if (!articleFound) return (
+        <MainPageLayout currentPage="blog">
+            <BackLink />
+            <h1>Page not found</h1>
+            <p>The article you are looking for does not exist.</p>
+        </MainPageLayout>
 
-            const html = await parseMarkdown(raw);
-            return html;
-        };
+    );
 
-        fetchContent().then(html => {
-            if (contentRef.current) {
-                contentRef.current.innerHTML = html;
-            }
+    const getDate = (date: { y: number, m: number, d: number; }) => {
+        return new Date(date.y, date.m - 1, date.d).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
         });
+    }
 
-    }, [slug]);
+    type BlogKey = keyof typeof blogData;
+    const blog = blogData[slug as BlogKey];
 
     return (
         <MainPageLayout currentPage="blog">
             <BackLink />
-            {
-                articleFound ? (
-                    <div ref={contentRef}>
-                    </div>
-                ) : (
-                    <>
-                        <h1>Page not found</h1>
-                        <p>The article you are looking for does not exist.</p>
-                    </>
-                )
-            }
+            <h1>{blog.title}</h1>
+            <p>{getDate(blog.date)}</p>
+            <hr /> 
+            <div ref={contentRef} />
         </MainPageLayout>
     );
-}
-
-////////////////////////////////////////////////////////////////////////////////
-
-function blogExists(articleID: string) {
-    return blogData.articles.some(article => article.identifier === articleID);
-}
-
-async function getRawMarkdown(articleID: string) {
-    const response = await fetch(`/markdown/blog/${articleID}.md`);
-    const content = await response.text();
-    return content;
 }

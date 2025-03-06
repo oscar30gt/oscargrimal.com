@@ -57,11 +57,11 @@ export default function ProjectPage() {
 
 			<div className="box technicalData">
 				<h3>Project Details</h3>
-				<p><i className="fi fi-rr-filter"></i><strong>Project Type: </strong>{project.technicalDetails.type}</p>
-				<p><i className="fi fi-rr-settings"></i><strong>Technologies: </strong>{project.technicalDetails.languagesAndTechnolgies}</p>
-				<p><i className="fi fi-rr-rotate-reverse"></i><strong>Status: </strong>{project.technicalDetails.status}</p>
-				<p><i className="fi fi-rr-calendar-lines"></i><strong>Year: </strong>{project.technicalDetails.year}</p>
-				<p><i className="fi fi-rr-clock-three"></i><strong>Duration: </strong>{project.technicalDetails.duration}</p>
+				<p><i className="fi fi-rr-filter"></i><strong>Project Type:&nbsp;</strong>{project.technicalDetails.type}</p>
+				<p><i className="fi fi-rr-settings"></i><strong>Technologies:&nbsp;</strong>{project.technicalDetails.languagesAndTechnolgies}</p>
+				<p><i className="fi fi-rr-rotate-reverse"></i><strong>Status:&nbsp;</strong>{project.technicalDetails.status}</p>
+				<p><i className="fi fi-rr-calendar-lines"></i><strong>Year:&nbsp;</strong>{project.technicalDetails.year}</p>
+				<p><i className="fi fi-rr-clock-three"></i><strong>Duration:&nbsp;</strong>{project.technicalDetails.duration}</p>
 			</div>
 
 		</MainContent>

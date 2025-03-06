@@ -8,7 +8,7 @@
         "themeColor": "",
         "technicalDetails": {
             "type": "Library/Tools",
-            "status": "In Progress",
+            "status": "In Development",
             "languagesAndTechnolgies": "React, TypeScript, Electron, Webpack, Babel, JavaScript, HTML, CSS",
             "duration": "-",
             "year": "-"
@@ -32,7 +32,7 @@
         "themeColor": "#",
         "technicalDetails": {
             "type": "VSCode Extension",
-            "status": "Finished",
+            "status": "Maintained",
             "languagesAndTechnolgies": "TypeScript, VSCode API",
             "duration": "2 weeks",
             "year": "2024"
@@ -52,7 +52,7 @@
         "themeColor": "#778cb8",
         "technicalDetails": {
             "type": "Personal Project",
-            "status": "Finished",
+            "status": "Archived",
             "languagesAndTechnolgies": "C#, Unity, Blender",
             "duration": "6 weeks",
             "year": "2024"
@@ -76,7 +76,7 @@
         "themeColor": "#3b85d1",
         "technicalDetails": {
             "type": "Unity Asset",
-            "status": "Finished",
+            "status": "Archived",
             "languagesAndTechnolgies": "C#, Unity, JSON",
             "duration": "3 months",
             "year": "2023"

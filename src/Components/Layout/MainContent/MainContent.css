@@ -86,7 +86,8 @@
 		border-radius: 5px;
 	}
 
-	pre, .box {
+	pre,
+	.box {
 		margin: 1.4rem 0;
 		background-color: var(--BACKGROUND-LIGHTER);
 		padding: 16px 20px;
@@ -155,30 +156,35 @@
 		}
 	}
 
-	.technicalData
-	{
+	hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid var(--SECONDARY);
+		margin: 1.5rem 0;
+		padding: 0;
+		opacity: 0.6;
+	}
+
+	.technicalData {
 		padding: 5px 20px;
-		
-		h3 
-		{
+
+		h3 {
 			margin-top: 1.7rem;
 			margin-bottom: 0.9rem;
 
-			&:first-child 
-			{
+			&:first-child {
 				margin-top: 0.6rem;
 			}
 		}
 
-		i 
-		{
+		i {
 			margin-right: 1rem;
 			position: relative;
 			top: 2px;
 		}
-		
-		p 
-		{
+
+		p {
 			margin: 10px 0;
 		}
 	}

@@ -20,7 +20,7 @@ export default function Home() {
 			<LinkWidget label="Explore all Projects" url="/projects/" />
 
 			<h2>Latest Posts</h2>
-			<BlogList limit={3} />
+			<BlogList />
 			<LinkWidget label="Full Blog" url="/blog/" />
 
 			<h2>About Me</h2>
