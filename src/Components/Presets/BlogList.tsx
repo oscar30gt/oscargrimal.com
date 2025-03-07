@@ -1,7 +1,10 @@
 import blogData from "../../assets/blog.json";
 import { BlogWidget } from "../Content/Widgets";
 
-export default function BlogList() {
+/**
+ * List with the latest blog posts.
+ */
+export default function BlogList({ limit }: { limit?: number }) {
     const getDate = (date: { y: number, m: number, d: number; }) => {
         return new Date(date.y, date.m - 1, date.d).toLocaleDateString("en-US", {
             year: "numeric",
@@ -10,8 +13,8 @@ export default function BlogList() {
         });
     };
 
-
     return Object.entries(blogData)
+        .slice(0, limit)
         .map(([id, { title, date }], i) => (
             <BlogWidget
                 key={i}
@@ -20,5 +23,5 @@ export default function BlogList() {
                 url={`/blog/${id}`}
             />
         )
-        );
+    );
 }

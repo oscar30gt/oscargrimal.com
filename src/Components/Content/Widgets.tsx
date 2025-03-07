@@ -1,5 +1,8 @@
 import "./Widgets.css";
 
+/**
+ * Small anchor displayed as a box link
+ */
 export function LinkWidget({
 	label,
 	url
@@ -15,6 +18,9 @@ export function LinkWidget({
 	);
 }
 
+/**
+ * Link to a blog post. Displays title and date.
+ */
 export function BlogWidget({
 	title,
 	date,
@@ -32,6 +38,9 @@ export function BlogWidget({
 	);
 }
 
+/**
+ * Link with a title, caption and a square thumbnail.
+ */
 export function ThumbnailWidget({
 	title,
 	caption = "",
@@ -54,6 +63,9 @@ export function ThumbnailWidget({
 	);
 }
 
+/**
+ * Link with a title, caption and an icon.
+ */
 export function IconLinkWidget({
 	title,
 	caption = "",

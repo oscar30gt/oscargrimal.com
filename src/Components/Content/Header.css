@@ -70,17 +70,7 @@ header.pageHeader {
 
 	&:not(:has(img))
 	{
-		min-height: 130px;
-		height: fit-content;
-
-		h1 
-		{
-			margin-top: 0;
-			padding-top: 4rem;
-			position: unset;
-			font-weight: 300;
-			margin-bottom: 1rem;
-		}
+		height: 50px;
 	}
 }
 

@@ -3,23 +3,10 @@ import React from "react";
 import "./MainContent.css";
 
 /**
- * @summary ---
- *
- * @component
- * @param {Object} props React component props.
+ * Main content section with markdown styling.
  */
 function MainContent({ children }: { children: React.JSX.Element | React.JSX.Element[]; }) {
-	//#region STATE AND VARIABLES
 
-	//#endregion STATE AND VARIABLES
-
-
-	//#region FUNCTIONS
-
-	//#endregion FUNCTIONS
-
-
-	//#region RENDER
 	return (
 		<section className="mainContentContainer">
 			<div className="mainContent markdown">
@@ -28,11 +15,13 @@ function MainContent({ children }: { children: React.JSX.Element | React.JSX.Ele
 			</div>
 		</section>
 	);
-	//#endregion RENDER
 }
 
 export default MainContent;
 
+/**
+ * Copyright footer visible on all pages.
+ */
 export function Copyright() {
 	return (
 		<footer>

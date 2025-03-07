@@ -2,6 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { BackLink } from "./Buttons";
 import "./Header.css";
 
+/**
+ * Header for a page. Can have an image, a title and a list of links.
+ * 
+ * @param props React component props
+ */
 export default function PageHeader({
     title,
     image,
@@ -23,6 +28,8 @@ export default function PageHeader({
             setThemeColor(true);
     });
 
+    // Handles the image parallax effect and theme color change on scroll.
+    // Only runs if the header has an image.
     const onScroll = () => {
         if (!image) return;
 
@@ -41,6 +48,7 @@ export default function PageHeader({
         };
     };
 
+    // Sets the theme color of the website.
     function setThemeColor(customTheme: boolean) {
         if (!themeColor) return;
 
@@ -60,14 +68,12 @@ export default function PageHeader({
         }
     }
 
-    const hasImage = image !== undefined;
-
-    if (hasImage) return (
+    return (
         <>
-            <header ref={headerRef} className="pageHeader">
-                <div className="imageContainer" style={{background: themeColor}}>
+            <header ref={headerRef} className="pageHeader" style={{ "--theme-color": themeColor } as React.CSSProperties}>
+                {image && <div className="imageContainer" style={{ background: themeColor }}>
                     <img src={image} alt="headerImage" />
-                </div>
+                </div>}
                 <div className="linkList">
                     <BackLink />
                     {linkList?.map((link, i) => (
@@ -79,20 +85,5 @@ export default function PageHeader({
             </header>
             <h1>{title}</h1>
         </>
-    );
-
-
-    return (
-        <header className="pageHeader" style={{ "--theme-color": themeColor } as React.CSSProperties}>
-            <div className="linkList">
-                <BackLink />
-                {linkList?.map((link, i) => (
-                    <a key={i} href={link.href} target="_blank" rel="noreferrer">
-                        <i className={`fi ${link.icon}`}></i>
-                    </a>
-                ))}
-            </div>
-            <h1>{title}</h1>
-        </header>
     );
 };

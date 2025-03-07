@@ -1,6 +1,9 @@
 import projectData from "../../assets/projects.json";
 import { ThumbnailWidget } from "../Content/Widgets";
 
+/**
+ * List of projects marked as featured.
+ */
 export default function ProjectList() {
     return Object.entries(projectData)
         .filter(([, project]) => project.featured)

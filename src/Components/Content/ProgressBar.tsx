@@ -1,3 +1,6 @@
+/**
+ * Markdown custom element for a progress bar.
+ */
 export default function ProgressBar({ title, progress }: { title: string, progress: number; }) {
     return (
         <div className="progressBar">

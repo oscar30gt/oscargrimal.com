@@ -19,10 +19,14 @@ createRoot(document.getElementById('root')!).render(
 	</React.StrictMode>
 );
 
+/**
+ * Main web component that handles routing to the different pages of the website.
+ */
 export function App() {
 	return (
 		<>
 			<Analytics />
+			
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -35,7 +39,6 @@ export function App() {
 
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/:slug" element={<BlogArticle />} />
-
 				</Routes>
 			</BrowserRouter>
 		</>

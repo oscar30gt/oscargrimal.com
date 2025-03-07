@@ -23,12 +23,25 @@
 	pointer-events: all;
 }
 
+footer {
+	margin-top: 2rem;
+
+	p.copyright {
+		text-align: center;
+		font-size: 0.8rem;
+		line-height: 1rem;
+		color: var(--SECONDARY);
+		opacity: 0.6;
+		margin: 0;
+	}
+}
+
 @media (max-width: 730px) {
 	.mainPage .mainContentContainer {
 		padding-left: 0;
 	}
 
-	.copyright {
-		padding-bottom: 4rem;
+	footer {
+		padding-bottom: 4.5rem;
 	}
 }

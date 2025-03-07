@@ -2,7 +2,7 @@ The past few months, I've been working hard on *DeskUI*, my biggest project so f
 
 I'm really proud of how it's shaping up, but there's still a lot to do!
 
-![Development Status]($progressbar20)
+![Development Status]($progressbar_20)
 
 DeskUI is designed to make creating desktop apps easier, more flexible, and enjoyable. Whether you're a web developer looking to expand into desktop applications or just someone who loves building great software, this project aims to simplify the process while keeping things powerful and scalable.
 

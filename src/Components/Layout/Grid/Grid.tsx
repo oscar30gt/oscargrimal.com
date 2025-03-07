@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./Grid.css";
 
+/**
+ * Element grid with list view option. 
+ * Grid items contain an image, title, and description.
+ */
 export default function Grid({
     title,
     content,
@@ -41,6 +45,9 @@ export default function Grid({
     );
 }
 
+/**
+ * Single grid item with image, title, and description.
+ */
 function GridItem({
     title,
     description,

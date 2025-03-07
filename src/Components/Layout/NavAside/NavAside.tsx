@@ -3,6 +3,9 @@ import Memoji from "../../../assets/Images/Common/Memoji.webp";
 
 import "./NavAside.css";
 
+/**
+ * Responsive aside navigation with profile picture and name.
+ */
 function NavAside({ children }: { children: React.JSX.Element | React.JSX.Element[]; }) {
 	//#region STATE AND VARIABLES
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);

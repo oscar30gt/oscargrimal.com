@@ -1,21 +1,33 @@
-# React + TypeScript + Vite
+# My Personal Website 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository for my personal website, built with **Vite + React** and deployed on **Vercel**. It serves as a space to showcase my **projects**, share insights on **software development**, and experiment with new ideas.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## ✨ Features
 
-## Deploy Your Own
+- **Markdown-based blog** – Write posts using Markdown files.
+- **Project showcase** – A dedicated section for personal projects.
+- **Customizable layout** – Easily adaptable to different needs.
 
-Deploy your own Vite project with Vercel.
+## 🚀 Getting Started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
+If you want to check out the code, modify it, or even use it as a starting point for your own site, feel free to clone the repository.
 
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
+```bash
+git clone https://github.com/oscar30gt/oscargrimal.com.git
+cd oscargrimal.com
 ```
+
+## Resources
+
+Here's the list of resoures I've used in this project:
+
+**Fonts**\
+Sans Serif: [*DM Sans*](https://fonts.google.com/specimen/DM+Sans)
+Serif: [*Fraunces*](https://fonts.google.com/specimen/Fraunces)
+Monospaced: [*DM Mono*](https://fonts.google.com/specimen/DM+Mono)
+
+**Icons**\
+Flaticon [UIcons](https://www.flaticon.es/uicons/interface-icons)
+
+**Libraries**\
+marked, react-router

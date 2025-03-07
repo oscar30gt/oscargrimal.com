@@ -120,16 +120,6 @@
 		}
 	}
 
-	footer {
-		.copyright {
-			text-align: center;
-			font-size: 0.8rem;
-			color: var(--SECONDARY);
-			margin-top: 2rem;
-			opacity: 0.6;
-		}
-	}
-
 	hr {
 		display: block;
 		height: 1px;

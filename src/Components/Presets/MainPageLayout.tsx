@@ -1,6 +1,9 @@
 import NavAside from "../Layout/NavAside/NavAside.tsx";
 import MainContent from "../Layout/MainContent/MainContent.tsx";
 
+/**
+ * Layout for a page with a navigation aside and a markdown content area.
+ */
 function MainPageLayout({ children, currentPage = "home" }: { children: React.JSX.Element | React.JSX.Element[], currentPage?: string; }) {
 
 	const pages = [
