@@ -9,7 +9,7 @@ function MainPageLayout({ children, currentPage = "home" }: { children: React.JS
 	const pages = [
 		{ name: "Home", url: "/" },
 		// { name: "Stack", url: "/stack/" },
-		{ name: "Projects", url: "/projects/" },
+		{ name: "Work", url: "/projects/" },
 		{ name: "Blog", url: "/blog/" },
 		{ name: "About", url: "/about/" },
 		{ name: "Links", url: "/links/" }
@@ -34,4 +34,4 @@ function MainPageLayout({ children, currentPage = "home" }: { children: React.JS
 	);
 }
 
-export default MainPageLayout;;;
+export default MainPageLayout;

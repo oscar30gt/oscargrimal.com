@@ -8,7 +8,7 @@ import '../index.css';
 
 export default function Projects() {
 	return (
-		<MainPageLayout currentPage="projects">
+		<MainPageLayout currentPage="work">
 			<h1>Projects</h1>
 
 			{/* <ProgressBar title="DeskUI Development Status" progress={20} /> */}

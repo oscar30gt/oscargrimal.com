@@ -1,5 +1,7 @@
 # My Personal Website 🌐
 
+[Visit site](https://oscargrimal.vercel.app)
+
 This is the repository for my personal website, built with **Vite + React** and deployed on **Vercel**. It serves as a space to showcase my **projects**, share insights on **software development**, and experiment with new ideas.
 
 ## ✨ Features
@@ -22,9 +24,9 @@ cd oscargrimal.com
 Here's the list of resoures I've used in this project:
 
 **Fonts**\
-Sans Serif: [*DM Sans*](https://fonts.google.com/specimen/DM+Sans)
-Serif: [*Fraunces*](https://fonts.google.com/specimen/Fraunces)
-Monospaced: [*DM Mono*](https://fonts.google.com/specimen/DM+Mono)
+Sans Serif: [*DM Sans*](https://fonts.google.com/specimen/DM+Sans)\
+Serif: [*Fraunces*](https://fonts.google.com/specimen/Fraunces)\
+Monospaced: [*DM Mono*](https://fonts.google.com/specimen/DM+Mono)\
 
 **Icons**\
 Flaticon [UIcons](https://www.flaticon.es/uicons/interface-icons)
