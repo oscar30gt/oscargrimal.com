@@ -26,7 +26,7 @@ Here's the list of resoures I've used in this project:
 **Fonts**\
 Sans Serif: [*DM Sans*](https://fonts.google.com/specimen/DM+Sans)\
 Serif: [*Fraunces*](https://fonts.google.com/specimen/Fraunces)\
-Monospaced: [*DM Mono*](https://fonts.google.com/specimen/DM+Mono)\
+Monospaced: [*DM Mono*](https://fonts.google.com/specimen/DM+Mono)
 
 **Icons**\
 Flaticon [UIcons](https://www.flaticon.es/uicons/interface-icons)
